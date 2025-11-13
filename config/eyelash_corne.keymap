@@ -83,7 +83,7 @@
         default_layer {
             display-name = "COLEMAK";
             bindings = <
-&td0        AS(Q)   AS(W)   AS(F)   AS(P)   AS(B)                            &kp UP                 &kp J       &kp L       &kp U       &kp Y    &kp SEMI   &kp RCTRL
+&td0        &kp Q   &kp W   &kp F   &kp P   &kp B                            &kp UP                 &kp J       &kp L       &kp U       &kp Y    &kp SEMI   &kp RCTRL
 &kp TAB     &kp A   &kp R   &kp S   &kp T   &kp G                &kp LEFT    &kp SPACE   &kp RIGHT  &kp M       &kp N       &kp E       &kp I    &kp O      &kp SQT
 &kp LSHIFT  &kp Z   &kp X   &kp C   &kp D   &kp V    &kp C_PP                &kp DOWN               &kp K       &kp H       &kp COMMA   &kp DOT  &kp FSLH   &kp RSHIFT
                     &kp DEL &lt 1 SPACE     &lt 3 ENTER                                             &lt 3 BSPC  &lt 2 SPACE &kp RALT
