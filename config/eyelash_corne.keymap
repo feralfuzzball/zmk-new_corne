@@ -44,7 +44,7 @@
 
         td_to1_to4: td_to1_to4 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Toggle layer 1/4 Tap Dance";
+            display-name = "Toggle layers 1/4 Tap Dance";
             #binding-cells = <0>;
             bindings = <&to 1>, <&to 4>;
         };
