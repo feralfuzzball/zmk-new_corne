@@ -30,21 +30,21 @@
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Grave/ESC Tap Dance";
+            display-name = "scap/tild Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp ESC>;
         };
 
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tab/Caps Lock Tap Dance";
+            display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp CAPS>;
         };
 
         td_to1_to4: td_to1_to4 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Toggle layers 1/4 Tap Dance";
+            display-name = "Toggle layer 1/4 Tap Dance";
             #binding-cells = <0>;
             bindings = <&to 1>, <&to 4>;
         };
@@ -68,11 +68,11 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "CLMK";
+            display-name = "BASE";
             bindings = <
 &td0    &kp Q           &kp W       &kp F       &kp P           &kp B                               &kp UP                  &kp J       &kp L           &kp U           &kp Y           &kp SEMI        &td_to1_to4
 &td1    &kp A           &kp R       &kp S       &mt LSHIFT T    &kp G                   &kp LEFT    &kp SPACE  &kp RIGHT    &kp M       &mt RSHIFT N    &kp E           &kp I           &kp O           &kp SQT
-&kp Z   &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &kp D           &kp V       &kp C_PLAY_PAUSE        &kp DOWN                &kp K       &kp H           &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
+&to 2   &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &kp D           &kp V       &kp C_MUTE              &kp DOWN                &kp K       &kp H           &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
                                     &kp DEL     &lt 1 SPACE     &lt 3 ENTER                                                 &kp BSPC    &lt 2 SPACE     &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
