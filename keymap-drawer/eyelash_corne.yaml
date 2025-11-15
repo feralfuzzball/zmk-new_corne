@@ -16,7 +16,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td1'
   - A
-  - {t: R, h: '1'}
+  - {t: R, h: SYMBOL}
   - S
   - T
   - G
@@ -26,7 +26,7 @@ layers:
   - M
   - N
   - E
-  - {t: I, h: '1'}
+  - {t: I, h: SYMBOL}
   - O
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
@@ -65,7 +65,7 @@ layers:
   - RGB EFR
   - RGB ON
   - '!'
-  - '*'
+  - {t: '*', type: held}
   - {t: /, s: '?'}
   - {t: '=', s: +}
   - '&'
@@ -75,7 +75,7 @@ layers:
   - '#'
   - (
   - )
-  - {t: ;, s: ':'}
+  - {t: ;, s: ':', type: held alternate}
   - '"'
   - RGB SPI
   - RGB EFF
