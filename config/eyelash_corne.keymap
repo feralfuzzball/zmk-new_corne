@@ -42,7 +42,7 @@
             bindings = <&kp TAB>, <&kp CAPS>;
         };
 
-        td_to1_to4: td_to1_to4 {
+        td2: td2 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Toggle layer 1/4 Tap Dance";
             #binding-cells = <0>;
@@ -70,9 +70,9 @@
         default_layer {
             display-name = "CLMK";
             bindings = <
-&td0    &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td_to1_to4
+&td0    &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td2
 &td1    &kp A           &kp R       &kp S       &kp T       &kp G                   &kp LEFT    &kp SPACE  &kp RIGHT    &kp M       &kp N       &kp E           &kp I           &kp O           &kp SQT
-&td_to1_to4     &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
+&td2    &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
                                                         &kp DEL     &lt 1 SPACE     &lt 3 ENTER                     &kp BSPC    &lt 2 SPACE     &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
