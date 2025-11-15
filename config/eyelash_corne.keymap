@@ -71,7 +71,7 @@
             display-name = "CLMK-DH";
             bindings = <
 &td0        &kp Q           &kp W       &kp F       &kp P       &kp B                                   &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &none
-&td1        &kp A           &mt 1 R     &kp S       &kp T       &kp G                       &kp LEFT    &kp SPACE &kp RIGHT     &kp M       &kp N       &kp E           &mt 1 I         &kp O           &kp SQT
+&td1        &kp A           &lt 1 R     &kp S       &kp T       &kp G                       &kp LEFT    &kp SPACE &kp RIGHT     &kp M       &kp N       &kp E           &lt 1 I         &kp O           &kp SQT
 &kp LCTRL   &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                    &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &none
                                                     &kp DEL     &lt 2 SPACE &lt 3 ENTER                             &kp BSPC    &lt 2 SPACE &none
             >;
