@@ -28,14 +28,14 @@
 
 / {
     behaviors {
-        td_grav_esc: td_grav_esc {
+        td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Grave/ESC Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp ESC>;
         };
 
-        td_tab_caps: td_tab_caps {
+        td1: td1 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tab/Caps Lock Tap Dance";
             #binding-cells = <0>;
@@ -70,8 +70,8 @@
         default_layer {
             display-name = "CLMK";
             bindings = <
-&td_grav_esc    &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td_to1_to4
-&td_tab_caps    &kp A           &kp R       &kp S       &kp T       &kp G                   &kp LEFT    &kp SPACE  &kp RIGHT    &kp M       &kp N       &kp E           &kp I           &kp O           &kp SQT
+&td0    &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td_to1_to4
+&td1    &kp A           &kp R       &kp S       &kp T       &kp G                   &kp LEFT    &kp SPACE  &kp RIGHT    &kp M       &kp N       &kp E           &kp I           &kp O           &kp SQT
 &td_to1_to4     &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
                                                         &kp DEL     &lt 1 SPACE     &lt 3 ENTER                     &kp BSPC    &lt 2 SPACE     &kp RALT
             >;
