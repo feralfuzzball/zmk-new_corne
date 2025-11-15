@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  BASE:
-  - '&td0'
+  CLMK-DH:
+  - '&td_grave_esc'
   - Q
   - W
   - F
@@ -14,42 +14,42 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - '&td_to1_to4'
-  - '&td1'
+  - '&td_tab_caps'
   - A
   - R
   - S
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - T
   - G
   - $$mdi:arrow-left-bold$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - N
   - E
   - I
   - O
   - {t: '''', s: '"'}
-  - {t: RAISE, h: toggle}
+  - '&td_to1_to4'
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - D
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - V
-  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
   - $$mdi:arrow-down-bold$$
   - K
-  - H
+  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: RGUI, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: DROP}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: RAISE}
   - $$mdi:apple-keyboard-option$$
-  DROP:
+  SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -62,7 +62,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - {t: '9', s: (}
-  - {t: BASE, h: toggle}
+  - {t: CLMK-DH, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -78,7 +78,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - PG UP
-  - {t: BASE, h: toggle}
+  - {t: CLMK-DH, h: toggle}
   - RGB OFF
   - RGB ON
   - {t: '$$mdi:transfer$$', type: trans}
@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   GAME:
-  - DROP
+  - SYMBOL
   - RAISE
   - FN
   - GAME
@@ -209,7 +209,7 @@ layers:
   - I
   - O
   - P
-  - {t: BASE, h: toggle}
+  - {t: CLMK-DH, h: toggle}
   - '&td0'
   - A
   - S
@@ -240,7 +240,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: DROP}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:backspace$$', h: FN}
   - {t: '$$mdi:keyboard-space$$', h: RAISE}
