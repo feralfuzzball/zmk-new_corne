@@ -63,28 +63,28 @@
 
         tap-ms = <100>;
     };
-
+    
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "CLMK";
+            display-name = "CLMK-DH";
             bindings = <
-&td0    &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td2
-&td1    &kp A           &kp R       &kp S       &kp T       &kp G                   &kp LEFT    &kp SPACE  &kp RIGHT    &kp M       &kp N       &kp E           &kp I           &kp O           &kp SQT
-&td2    &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
-                                                        &kp DEL     &lt 1 SPACE     &lt 3 ENTER                     &kp BSPC    &lt 2 SPACE     &kp RALT
+&td0        &kp Q           &kp W       &kp F       &kp P       &kp B                                   &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &none
+&td1        &kp A           &mt 1 R     &kp S       &kp T       &kp G                       &kp LEFT    &kp SPACE &kp RIGHT     &kp M       &kp N       &kp E           &mt 1 I         &kp O           &kp SQT
+&kp LCTRL   &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                    &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &none
+                                                    &kp DEL     &lt 2 SPACE &lt 3 ENTER                             &kp BSPC    &lt 2 SPACE &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
-            display-name = "SYMB";
+            display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH        &kp DOLLAR    &kp PERCENT                                    &mmv MOVE_UP                       &kp CARET       &kp HOME        &kp UP             &kp END         &kp N9    &to 0
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT    &trans          &kp LEFT        &kp DOWN           &kp RIGHT       &kp HOME  &kp PG_UP
-&to 0   &rgb_ug RGB_OFF  &rgb_ug RGB_ON     &trans          &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                     &rgb_ug RGB_EFR &rgb_ug RGB_SPI &rgb_ug RGB_BRI    &rgb_ug RGB_BRD &kp END   &kp PG_DN
-                                            &trans          &trans        &trans                                                                            &kp MINUS       &kp UNDERSCORE  &trans
+&rgb_ug RGB_OFF &kp GRAVE   &kp LT      &kp GT      &kp MINUS   &kp PIPE                                    &mmv MOVE_UP                    &kp CARET   &kp LBRC    &kp RBRC    &kp DOLLAR  &kp BSLH    &rgb_ug RGB_EFR
+&rgb_ug RGB_ON  &kp EXCL    &kp STAR    &kp SLASH   &kp EQUAL   &kp AMPS                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT &kp HASH    &kp LPAR    &kp RPAR    &kp SEMI    &kp DQT     &rgb_ug RGB_SPI
+&rgb_ug RGB_EFF &kp TILDE   &kp PLUS    &kp LBKT    &kp RBKT    &kp PERCENT &trans                          &mmv MOVE_DOWN                  &kp AT      &kp COLON   &kp COMMA   &kp DOT     &kp SQT     &rgb_ug RGB_BRI 
+                                                    &trans      &trans      &trans                                              &trans      &trans      &trans
             >;
             sensor-bindings = <&scroll_encoder>;
         };
