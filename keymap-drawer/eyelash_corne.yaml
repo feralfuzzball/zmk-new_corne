@@ -42,7 +42,7 @@ layers:
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: RGUI, s: '?'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-space$$', h: RAISE}
   - {t: '$$mdi:keyboard-return$$', h: FN}
@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - _
   - {t: '$$mdi:transfer$$', type: trans}
   RAISE:
   - {t: '$$mdi:transfer$$', type: trans}
