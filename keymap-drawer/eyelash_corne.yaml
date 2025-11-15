@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   CLMK:
-  - '&td_grav_esc'
+  - '&td0'
   - Q
   - W
   - F
@@ -14,7 +14,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - '&td_to1_to4'
-  - '&td_tab_caps'
+  - '&td1'
   - A
   - R
   - S
