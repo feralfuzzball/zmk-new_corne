@@ -28,14 +28,14 @@
 
 / {
     behaviors {
-        td0: td_grave_esc {
+        td_gra_esc: td_grav_esc {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Grave/ESC Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp ESC>;
         };
 
-        td1: td_tab_caps {
+        td_tab_cap: td_tab_caps {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tab/Caps Lock Tap Dance";
             #binding-cells = <0>;
@@ -68,9 +68,9 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "CLMK-DH";
+            display-name = "CLMK";
             bindings = <
-&td_grave_esc   &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td_to1_to4
+&td_grav_esc    &kp Q           &kp W       &kp F       &kp P       &kp B                               &kp UP                  &kp J       &kp L       &kp U           &kp Y           &kp SEMI        &td_to1_to4
 &td_tab_caps    &kp A           &kp R       &kp S       &kp T       &kp G                   &kp LEFT    &kp SPACE  &kp RIGHT    &kp M       &kp N       &kp E           &kp I           &kp O           &kp SQT
 &td_to1_to4     &mt LEFT_GUI Z  &mt LALT X  &mt LCTRL C &mt LSHFT D &kp V       &kp C_PP                &kp DOWN                &kp K       &mt LSHFT H &mt RCTRL COMMA &mt RALT DOT    &mt RGUI FSLH   &kp BSLH
                                                         &kp DEL     &lt 1 SPACE     &lt 3 ENTER                     &kp BSPC    &lt 2 SPACE     &kp RALT
@@ -79,7 +79,7 @@
         };
 
         lower_layer {
-            display-name = "SYMBOL";
+            display-name = "SYMB";
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH        &kp DOLLAR    &kp PERCENT                                    &mmv MOVE_UP                       &kp CARET       &kp HOME        &kp UP             &kp END         &kp N9    &to 0
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT    &trans          &kp LEFT        &kp DOWN           &kp RIGHT       &kp HOME  &kp PG_UP
