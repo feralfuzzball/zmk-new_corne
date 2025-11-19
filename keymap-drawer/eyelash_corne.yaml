@@ -151,8 +151,8 @@ layers:
   - F12
   - F1
   - F2
-  - F3
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
