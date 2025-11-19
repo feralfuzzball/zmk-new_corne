@@ -104,7 +104,7 @@
         layer_3 {
             display-name = "FN";
             bindings = <
-&kp F12     &kp F1          &kp F2      &kp F3     &mmv MOVE_UP      &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&kp F12     &kp F1          &kp F2      &mmv MOVE_UP &kp F4           &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans      &trans          &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
 &trans      &kp K_UNDO      &kp K_CUT   &kp K_COPY  &kp K_REDO  &kp K_PASTE  &kp C_MUTE                 &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                         &mkp RCLK      &mkp LCLK       &mkp MCLK                                                                   &trans       &trans     &to 0
