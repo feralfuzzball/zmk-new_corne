@@ -29,7 +29,7 @@ layers:
   - {t: I, h: SYMBOL}
   - O
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - _
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
@@ -44,10 +44,10 @@ layers:
   - {t: /, h: RGUI, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: RAISE}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-space$$', h: RAISE}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '3', h: FN}
   SYMBOL:
   - RGB OFF
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - {t: '$$mdi:transfer$$', type: trans}
-  RAISE:
+  NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - {t: '7', s: '&'}
@@ -198,7 +198,7 @@ layers:
   - {t: CLMK-DH, h: toggle, type: held alternate}
   GAME:
   - SYMBOL
-  - RAISE
+  - NUM
   - FN
   - GAME
   - R
@@ -243,5 +243,5 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:backspace$$', h: FN}
-  - {t: '$$mdi:keyboard-space$$', h: RAISE}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - $$mdi:apple-keyboard-option$$
