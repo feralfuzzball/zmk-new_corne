@@ -2,7 +2,7 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   CLMK-DH:
   - '&td0'
-  - Q
+  - '&coh Q'
   - W
   - F
   - P
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '3', h: FN}
+  - {t: '3', h: '3'}
   SYMBOL:
   - RGB OFF
   - {t: '`', s: '~'}
@@ -182,7 +182,7 @@ layers:
   - COPY
   - REDO
   - PASTE
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: CLMK-DH, h: toggle, type: held alternate}
+  - {t: CLMK-DH, h: toggle}
   GAME:
   - SYMBOL
   - NUM
@@ -231,7 +231,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
   - N
   - M
