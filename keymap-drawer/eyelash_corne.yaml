@@ -8,11 +8,11 @@ layers:
   - {t: P, h: Sft+P}
   - {t: B, h: Sft+B}
   - $$mdi:arrow-up-bold$$
-  - J
-  - L
-  - U
-  - Y
-  - {t: ;, s: ':'}
+  - {t: J, h: Sft+J}
+  - {t: L, h: Sft+L}
+  - {t: U, h: Sft+U}
+  - {t: Y, h: Sft+Y}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td1'
   - {t: A, h: Sft+A}
@@ -20,35 +20,35 @@ layers:
   - {t: S, h: Sft+S}
   - {t: T, h: Sft+T}
   - {t: G, h: Sft+G}
-  - Alt+$$mdi:keyboard-tab$$
+  - $$mdi:arrow-left-bold$$
   - $$mdi:keyboard-space$$
-  - Sft+Alt+$$mdi:keyboard-tab$$
-  - M
-  - N
-  - E
-  - {t: I, h: SYMBOL}
-  - O
+  - $$mdi:arrow-right-bold$$
+  - {t: M, h: Sft+M}
+  - {t: N, h: Sft+N}
+  - {t: E, h: Sft+E}
+  - {t: I, h: Sft+I}
+  - {t: O, h: Sft+O}
   - {t: '''', s: '"'}
   - _
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Z, h: Sft+Z}
+  - {t: X, h: Sft+X}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - V
+  - {t: V, h: Sft+V}
   - $$mdi:play-pause$$
   - $$mdi:arrow-down-bold$$
-  - K
-  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
-  - {t: /, h: RGUI, s: '?'}
+  - {t: K, h: Sft+K}
+  - {t: H, h: Sft+H}
+  - {t: ',', h: Ctl+C, s: <}
+  - {t: ., h: Ctl+X, s: '>'}
+  - {t: /, h: Ctl+V, s: '?'}
   - {t: \, s: '|'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: FN}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
+  - {t: '$$mdi:keyboard-tab$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '3', h: FN}
+  - {t: '3', h: NAV}
   SYMBOL:
   - RGB OFF
   - {t: '`', s: '~'}
@@ -75,7 +75,7 @@ layers:
   - '#'
   - (
   - )
-  - {t: ;, s: ':', type: held}
+  - {t: ;, s: ':'}
   - '"'
   - RGB SPI
   - RGB EFF
@@ -93,18 +93,18 @@ layers:
   - {t: '''', s: '"'}
   - RGB BRI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: _, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - _
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '?'
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
+  - '%'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - '%'
+  - {t: '-', s: _}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
   - HOME
@@ -113,11 +113,11 @@ layers:
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
+  - '*'
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - '&mkp MB4'
+  - +
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -128,11 +128,11 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
+  - {t: /, s: '?'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - '&mkp MB5'
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
@@ -143,11 +143,11 @@ layers:
   - '~'
   - {t: ., s: '>', type: held}
   - {t: '0', s: )}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  FN:
+  NAV:
   - F12
   - F1
   - F2
@@ -193,14 +193,14 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:mouse-scroll-wheel$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: CLMK-DH, h: toggle, type: held alternate}
-  GAME:
+  FN:
   - SYMBOL
   - NUM
+  - NAV
   - FN
-  - GAME
   - R
   - T
   - $$mdi:arrow-up-bold$$
@@ -241,7 +241,56 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: FN}
-  - {t: '$$mdi:backspace$$', h: FN}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
+  - {t: '$$mdi:backspace$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - $$mdi:apple-keyboard-option$$
+  GAME:
+  - SYMBOL
+  - NUM
+  - NAV
+  - FN
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: CLMK-DH, h: toggle}
+  - '&td0'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-down-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
+  - LGUI
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
+  - {t: '$$mdi:backspace$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - $$mdi:apple-keyboard-option$$
