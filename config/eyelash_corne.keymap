@@ -69,10 +69,10 @@
         Base {
             display-name = "CLMK-DH";
             bindings = <
-&kp ESC    &mt LS(Q) Q  &mt LS(W) W  &mt LS(F) F  &mt LS(P) P  &mt LS(B) B                        &kp UP                &mt LS(J) J      &mt LS(L) L  &mt LS(U) U      &mt LS(Y) Y    &kp BACKSPACE   &none
-&kp TAB    &mt LS(A) A  &mt LS(R) R  &mt LS(S) S  &mt LS(T) T  &mt LS(G) G              &kp LEFT  &kp SPACE  &kp RIGHT  &mt LS(M) M      &mt LS(N) N  &mt LS(E) E      &mt LS(I) I    &mt LS(O) O     &kp SQT
-&kp LSHFT  &mt LS(Z) Z  &mt LS(X) X  &mt LCTRL C  &mt LSHFT D  &mt LS(V) V  &kp C_PP              &kp DOWN              &mt LS(K) K      &mt LS(H) H  &mt LC(C) COMMA  &mt LC(X) DOT  &mt LC(V) FSLH  &kp BSLH
-                                     &lt 2 DEL    &lt 1 SPACE  &lt 3 ENTER                                              &lt 3 BACKSPACE  &lt 2 SPACE  &lt 3 3
+&kp ESC    &mt LS(Q) Q  &mt LS(W) W  &mt LS(F) F      &mt LS(P) P  &mt LS(B) B                        &kp UP                &mt LS(J) J      &mt LS(L) L  &mt LS(U) U      &mt LS(Y) Y    &kp BACKSPACE   &kp LWIN
+&kp TAB    &mt LS(A) A  &mt LS(R) R  &mt LS(S) S      &mt LS(T) T  &mt LS(G) G              &kp LEFT  &kp SPACE  &kp RIGHT  &mt LS(M) M      &mt LS(N) N  &mt LS(E) E      &mt LS(I) I    &mt LS(O) O     &kp SQT
+&kp LSHFT  &mt LS(Z) Z  &mt LS(X) X  &mt LS(LCTRL) C  &mt LS(D) D  &mt LS(V) V  &kp C_PP              &kp DOWN              &mt LS(K) K      &mt LS(H) H  &mt LC(C) COMMA  &mt LC(X) DOT  &mt LC(V) FSLH  &mt LC(A) BACKSLASH
+                                     &lt 2 DEL        &lt 1 SPACE  &lt 2 ENTER                                              &lt 2 BACKSPACE  &lt 1 SPACE  &lt 3 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -93,10 +93,10 @@
         Numbers {
             display-name = "NUM";
             bindings = <
-&trans  &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp MINUS                            &mmv MOVE_UP                     &kp CARET  &kp HOME  &kp UP    &kp END    &kp RPAR  &kp BSPC
-&trans  &kp STAR     &kp N4  &kp N5   &kp N6  &kp PLUS             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BSLH  &kp GRAVE
-&trans  &kp SLASH    &kp N1  &kp N2   &kp N3  &kp EQUAL  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC   &kp PIPE  &kp TILDE
-                             &kp DOT  &kp N0  &trans                                                                &kp BSPC   &trans    &trans
+&trans  &kp PERCENT  &kp N7  &kp N8   &kp N9  &kp MINUS                            &mmv MOVE_UP                     &kp PERCENT      &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp BSPC
+&trans  &kp STAR     &kp N4  &kp N5   &kp N6  &kp PLUS             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &kp GRAVE
+&trans  &kp SLASH    &kp N1  &kp N2   &kp N3  &kp EQUAL  &trans                    &mmv MOVE_DOWN                   &kp KP_DIVIDE    &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_EQUAL  &kp TILDE
+                             &kp DOT  &kp N0  &trans                                                                &kp BSPC         &kp KP_N0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
