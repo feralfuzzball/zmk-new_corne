@@ -13,7 +13,7 @@ layers:
   - {t: U, h: Sft+U}
   - {t: Y, h: Sft+Y}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LWIN
   - $$mdi:keyboard-tab$$
   - {t: A, h: Sft+A}
   - {t: R, h: Sft+R}
@@ -32,8 +32,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: Z, h: Sft+Z}
   - {t: X, h: Sft+X}
-  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: C, h: 'Sft+$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: Sft+D}
   - {t: V, h: Sft+V}
   - $$mdi:play-pause$$
   - $$mdi:arrow-down-bold$$
@@ -42,12 +42,12 @@ layers:
   - {t: ',', h: Ctl+C, s: <}
   - {t: ., h: Ctl+X, s: '>'}
   - {t: /, h: Ctl+V, s: '?'}
-  - {t: \, s: '|'}
+  - {t: \, h: Ctl+A, s: '|'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: NAV}
-  - {t: '$$mdi:backspace$$', h: NAV}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '3', h: NAV}
   SYMBOL:
   - RGB OFF
@@ -96,7 +96,7 @@ layers:
   - {t: _, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - _
+  - {t: _, type: held alternate}
   - '?'
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -106,11 +106,11 @@ layers:
   - {t: '9', s: (}
   - {t: '-', s: _}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
-  - HOME
-  - $$mdi:arrow-up-bold$$
-  - END
-  - )
+  - '%'
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - '*'
@@ -121,11 +121,11 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: \, s: '|'}
+  - KP MULTIPLY
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
@@ -135,18 +135,18 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
+  - KP DIVIDE
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP EQUAL
   - '~'
   - {t: ., s: '>', type: held}
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: held alternate}
+  - KP 0
+  - KP DOT
   NAV:
   - F12
   - F1
@@ -192,10 +192,10 @@ layers:
   - PAUSE BREAK
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', type: held}
-  - {type: held alternate}
+  - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: CLMK-DH, h: toggle, type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: CLMK-DH, h: toggle, type: held}
   FN:
   - SYMBOL
   - NUM
