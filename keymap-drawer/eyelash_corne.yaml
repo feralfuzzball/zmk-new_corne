@@ -42,7 +42,7 @@ layers:
   - {t: ',', h: Ctl+C, s: <}
   - {t: ., h: Ctl+X, s: '>'}
   - {t: /, h: Ctl+V, s: '?'}
-  - {t: \, h: Ctl+A, s: '|'}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
