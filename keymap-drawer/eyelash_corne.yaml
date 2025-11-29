@@ -29,7 +29,7 @@ layers:
   - {t: I, h: Sft+I}
   - {t: O, h: Sft+O}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
+  - '&td2'
   - {t: Z, h: Sft+Z}
   - {t: X, h: Sft+X}
   - {t: C, h: Sft+C}
@@ -42,7 +42,7 @@ layers:
   - {t: ',', h: Ctl+C, s: <}
   - {t: ., h: Ctl+X, s: '>'}
   - {t: /, h: Ctl+V, s: '?'}
-  - $$mdi:apple-keyboard-control$$
+  - '&td5'
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-return$$', h: FN}
