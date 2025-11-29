@@ -45,7 +45,14 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Toggle layer 1/4 Tap Dance";
             #binding-cells = <0>;
-            bindings = <&to 1>, <&to 4>;
+            bindings = <&kp LSHFT>, <&kp LCTRL>;
+        };
+
+        td5: td5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD5";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL>, <&kp RSHIFT>;
         };
     };
 
@@ -69,10 +76,10 @@
         Base {
             display-name = "BASE";
             bindings = <
-&kp ESC    &mt LS(Q) Q  &mt LS(W) W  &mt LS(F) F  &mt LS(P) P  &mt LS(B) B                        &kp UP                &mt LS(J) J      &mt LS(L) L  &mt LS(U) U      &mt LS(Y) Y    &kp BACKSPACE   &kp LWIN
-&kp TAB    &mt LS(A) A  &mt LS(R) R  &mt LS(S) S  &mt LS(T) T  &mt LS(G) G              &kp LEFT  &kp SPACE  &kp RIGHT  &mt LS(M) M      &mt LS(N) N  &mt LS(E) E      &mt LS(I) I    &mt LS(O) O     &kp RIGHT_ALT
-&kp LSHFT  &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(D) D  &mt LS(V) V  &kp C_PP              &kp DOWN              &mt LS(K) K      &mt LS(H) H  &mt LC(C) COMMA  &mt LC(X) DOT  &mt LC(V) FSLH  &kp RCTRL
-                                     &lt 3 DEL    &lt 1 SPACE  &lt 4 ENTER                                              &lt 2 BACKSPACE  &lt 1 SPACE  &to 3
+&kp ESC  &mt LS(Q) Q  &mt LS(W) W  &mt LS(F) F  &mt LS(P) P  &mt LS(B) B                        &kp UP                &mt LS(J) J      &mt LS(L) L  &mt LS(U) U      &mt LS(Y) Y    &kp BACKSPACE   &kp LWIN
+&kp TAB  &mt LS(A) A  &mt LS(R) R  &mt LS(S) S  &mt LS(T) T  &mt LS(G) G              &kp LEFT  &kp SPACE  &kp RIGHT  &mt LS(M) M      &mt LS(N) N  &mt LS(E) E      &mt LS(I) I    &mt LS(O) O     &kp RIGHT_ALT
+&td2     &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(D) D  &mt LS(V) V  &kp C_PP              &kp DOWN              &mt LS(K) K      &mt LS(H) H  &mt LC(C) COMMA  &mt LC(X) DOT  &mt LC(V) FSLH  &td5
+                                   &lt 3 DEL    &lt 1 SPACE  &lt 4 ENTER                                              &lt 2 BACKSPACE  &lt 1 SPACE  &to 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
