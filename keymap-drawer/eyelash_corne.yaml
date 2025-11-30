@@ -28,7 +28,7 @@ layers:
   - {t: E, h: Sft+E}
   - {t: I, h: Sft+I}
   - {t: O, h: Sft+O}
-  - $$mdi:apple-keyboard-option$$
+  - '&td4'
   - '&td2'
   - {t: Z, h: Sft+Z}
   - {t: X, h: Sft+X}
