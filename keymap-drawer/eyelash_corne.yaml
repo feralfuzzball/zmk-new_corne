@@ -198,10 +198,10 @@ layers:
   - {t: BASE, h: toggle}
   FN:
   - SYM
-  - NUM
-  - NAV
-  - FN
-  - R
+  - F10
+  - F7
+  - F8
+  - F9
   - T
   - $$mdi:arrow-up-bold$$
   - Y
@@ -211,10 +211,10 @@ layers:
   - P
   - {t: BASE, h: toggle}
   - '&td0'
-  - A
-  - S
-  - D
-  - F
+  - F11
+  - F4
+  - F5
+  - F6
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -226,10 +226,10 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
+  - F12
+  - F1
+  - F2
+  - F3
   - B
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
