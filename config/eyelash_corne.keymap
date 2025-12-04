@@ -131,10 +131,10 @@
         Fn {
             display-name = "FN";
             bindings = <
-&mo 1      &mo 2  &mo 3  &mo 4     &kp R        &kp T                            &kp UP                &kp Y       &kp U        &kp I      &kp O    &kp P     &to 0
-&td0       &kp A  &kp S  &kp D     &kp F        &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &kp B        &trans              &kp DOWN              &kp N       &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &lt 1 SPACE  &lt 3 ENTER                                            &lt 3 BSPC  &lt 2 SPACE  &kp RALT
+&mo 1      &kp F10  &kp F7  &kp F8    &kp F9       &kp T                            &kp UP                &kp Y       &kp U        &kp I      &kp O    &kp P     &to 0
+&td0       &kp F11  &kp F4  &kp F5    &kp F6       &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp F12  &kp F1  &kp F2    &kp F3       &kp B        &trans              &kp DOWN              &kp N       &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                            &kp LGUI  &lt 1 SPACE  &lt 3 ENTER                                            &lt 3 BSPC  &lt 2 SPACE  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
