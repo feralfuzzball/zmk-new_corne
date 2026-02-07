@@ -37,6 +37,14 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        lay1_lgui: lay1_lgui {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LAY1_LGUI";
+            bindings = <&mo 1>;
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -75,7 +83,7 @@
             bindings = <
 &kp ESCAPE  &kp Q            &kp W           &kp F        &kp P        &kp B                               &kp UP                &kp J        &kp L         &kp U      &kp Y    &kp P     &kp BSPC
 &kp TAB     &kp A            &lt 1 R         &kp S        &kp T        &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N         &kp E      &kp I    &kp O     &kp SQT
-&none       &mt LEFT_META Z  &mt LEFT_ALT X  &mt LCTRL C  &mt LSHFT D  &kp V        &kp SPACE              &kp DOWN              &kp K        &mt RSHIFT H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&lay1_lgui  &mt LEFT_META Z  &mt LEFT_ALT X  &mt LCTRL C  &mt LSHFT D  &kp V        &kp SPACE              &kp DOWN              &kp K        &mt RSHIFT H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                                              &kp LGUI     &kp SPACE    &lt 3 SPACE                                               &lt 3 ENTER  &kp SPACE     &kp RALT
             >;
 
